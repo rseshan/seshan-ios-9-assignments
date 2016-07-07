@@ -1,0 +1,12 @@
+Assignment 2 assessment: Seshan
+
+Age Verification: Perfect
+Good use of the else for invalid, would be slightly better to check if the conversion to an int works, but, what you have is good. 
+
+Bill Calculator: Perfect
+
+Guess Number: Perfect
+
+Nice use of one swift file and view controller code, however, in the future for larger projects you will probably want a separate file and class for each one. Later it will be important to know when you are leaving one view, and going into another.
+
+
