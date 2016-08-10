@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Shopping Choices-->
+        <scene sceneID="Kf7-Fy-xpO">
+            <objects>
+                <viewController id="Eqz-W1-LBE" customClass="AddItemViewController" customModule="Grocery_Cart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ixK-ZS-kbF"/>
+                        <viewControllerLayoutGuide type="bottom" id="iYq-sk-dEG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mEv-pe-lX9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="C3S-JF-5KT" userLabel="Horizontal Stack">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XE2-gr-MUk" userLabel="Vertical 1">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="536"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4m-9G-DuC">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="179"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <state key="normal" title="CHOCOLATE - $5.00" backgroundImage="Chocolate">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addItemUnoAction:" destination="Eqz-W1-LBE" eventType="touchUpInside" id="dFd-h7-Act"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noC-HQ-l5V">
+                                                <rect key="frame" x="0.0" y="179" width="300" height="178"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <state key="normal" title="BANANA - $7.50" backgroundImage="Banana">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addItemDuoAction:" destination="Eqz-W1-LBE" eventType="touchUpInside" id="OFO-c6-oPz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xD-S3-YN6">
+                                                <rect key="frame" x="0.0" y="357" width="300" height="179"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <state key="normal" title="SPINACH - $2.75" backgroundImage="Spinach">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addItemQuatroAction:" destination="Eqz-W1-LBE" eventType="touchUpInside" id="0H4-OL-eyf"/>
+                                                    <action selector="addItemTresAction:" destination="Eqz-W1-LBE" eventType="touchUpInside" id="jkm-2f-xmD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tzQ-zc-wo8" userLabel="Vertical 2">
+                                        <rect key="frame" x="300" y="0.0" width="300" height="536"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQ0-jl-v9U">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="179"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <state key="normal" title="SALMON - $20.25" backgroundImage="Salmon">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addItemQuatroAction:" destination="Eqz-W1-LBE" eventType="touchUpInside" id="K7E-wN-dE2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHU-J5-7A8">
+                                                <rect key="frame" x="0.0" y="179" width="300" height="178"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <state key="normal" title="ORANGE - $6.80" backgroundImage="Orange">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addItemCincoAction:" destination="Eqz-W1-LBE" eventType="touchUpInside" id="p9x-hm-90O"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egg-3p-Rmr">
+                                                <rect key="frame" x="0.0" y="357" width="300" height="179"/>
+                                                <state key="normal" title="CREATE"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C3S-JF-5KT" firstAttribute="leading" secondItem="mEv-pe-lX9" secondAttribute="leading" id="BAo-Wp-H0S"/>
+                            <constraint firstItem="C3S-JF-5KT" firstAttribute="top" secondItem="ixK-ZS-kbF" secondAttribute="bottom" id="QU8-WI-W3a"/>
+                            <constraint firstAttribute="trailing" secondItem="C3S-JF-5KT" secondAttribute="trailing" id="uc4-Ua-r92"/>
+                            <constraint firstItem="iYq-sk-dEG" firstAttribute="top" secondItem="C3S-JF-5KT" secondAttribute="bottom" id="veO-PU-OgM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shopping Choices" id="hs6-4m-liH">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="UNG-e2-WRd">
+                            <connections>
+                                <action selector="cancelButtonAction:" destination="Eqz-W1-LBE" id="50J-lc-kQH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bWy-sd-6yW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="359"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5BP-JE-ye9">
+            <objects>
+                <navigationController storyboardIdentifier="AddNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="r0h-yV-wxT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v2c-AE-0bR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Eqz-W1-LBE" kind="relationship" relationship="rootViewController" id="FoD-wa-swr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JI5-uo-PqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293" y="359"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Banana" width="3008" height="2000"/>
+        <image name="Chocolate" width="620" height="372"/>
+        <image name="Orange" width="1600" height="1067"/>
+        <image name="Salmon" width="2048" height="1365"/>
+        <image name="Spinach" width="1920" height="1080"/>
+    </resources>
+</document>
